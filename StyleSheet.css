@@ -1,0 +1,177 @@
+body{
+background-color: #2c3531;
+margin: 0px;
+color: #d9b08c;
+
+@font-face {
+  font-family: Verdana;
+  src: url(Verdana.ttf);
+}
+
+font-family: Verdana;
+}
+
+#site{
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#header{ /*Not used*/
+	padding: 15px;
+	color: #ffffff;
+	font-family: Arial, Verdana, sans-serif;
+      	font-size: 16px;
+	background-color: #93b6c7;
+}
+#headertext{ /*Not used*/
+	padding:0px;
+	margin:0px;
+	color: #000000;
+}
+
+#movebar{
+	margin:0;
+	padding:0px;
+        font-family: sans-serif;
+padding-bottom: 25px;
+background-color: none;
+}
+#homebackround{
+  background: url("Images/Robot.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.active {
+  background-color: #d9b08c !important;
+  color: #0a3d26 !important;
+}
+
+nav{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #116466;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  padding: 14px 50px;
+
+}
+
+nav a:link{
+    color: #d1e8e2;
+    text-decoration: none;
+}
+
+nav a:hover {
+   background-color: #0b4141;
+   color: #d1e8e2 !important;
+}
+nav a:active{
+color: #116466;
+}
+nav a:visited{
+color: #d1e8e2;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown nav a {
+  font-size: 18px;
+  padding: 14px 50px;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.dropdown .dropbtn {
+  background-color: #116466;
+  color: #d1e8e2;
+  font-size: 20px;
+  padding: 14px 50px;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.nav a:hover, .dropdown:hover .dropbtn {
+  background-color: #0b4141;
+}
+
+.dropdown-text {
+  display: none;
+  position: fixed;
+  background-color: #1a9799;
+  min-width: 100px;
+  padding 14px;
+  z-index: 1;
+
+}
+.dropdown-text a {
+  float: none;
+  color: black;
+  padding: 12px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-text a:hover {
+background-color: #168183;
+}
+
+.dropdown:hover .dropdown-text {
+display: block;
+color: #d1e8e2 !important;
+}
+
+.box{
+border: 3px solid #116466;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+.imgM{
+padding-right: 50px;
+padding-top: 10px;
+}
+
+.moveName{
+padding-left: 12px;
+}
+
+#content{
+	padding:10px;
+      	font-size: 16px;
+	background-color: #2c3531;
+}
+
+#contentHome{
+	padding:10px;
+	font-family: Arial, Verdana, sans-serif;
+      	font-size: 16px;
+    background-color: none;
+    color: #d1e8e2;
+}
+.center{
+padding: 250px 0;
+text-align: center;
+}
+
+/*Styles for links*/
+a:link    {color: #d1e8e2;}
+a:visited {color: #e6ccff;}
+a:hover   {color: #99ccbe;}
+a:active  {color: #eef6f4;}

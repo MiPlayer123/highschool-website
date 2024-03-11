@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mikul CS Showcase</title>
+    <link href="StyleSheet.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/Robot.jpg">
+</head>
+
+
+<body> <!--Main site content begins here-->
+<div id="site"> <!--Page container-->
+
+
+    <div id="movebar"> <!--Navigation bar-->
+        <p>
+            <nav>
+                <inline><a href="ShowcaseHome.htm">Home</a></inline>
+                <div class="dropdown">
+                    <button onclick="window.location.href = 'ShowcaseSubmit.htm';" class="dropbtn">Submitted Projects
+                    </button>
+                    <div class="dropdown-text">
+                        <a href="ShowcaseSubmit.htm#Python">Python</a>
+                        <a href="ShowcaseSubmit.htm#Java">Java</a>
+                        <a href="ShowcaseSubmit.htm#HTML">HTML</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="window.location.href = 'ShowcasePractice.htm';" class="dropbtn">Practice Projects
+                    </button>
+                    <div class="dropdown-text">
+                        <a href="ShowcasePractice.htm#Python">Python</a>
+                        <a href="ShowcasePractice.htm#Java">Java</a>
+                        <a href="ShowcasePractice.htm#HTML">HTML</a>
+                    </div>
+                </div>
+                <a class="active" href="ShowcaseOther.htm">Other Projects</a>
+            </nav>
+        </p>
+    </div>
+
+    <div id="content"> <!--Main content-->
+        <h1>Other Projects</h1>
+        <hr> <!--Creates a horizontal rule-->
+        <br>
+        <div class="box">
+            <h2><strong>Programming</strong></h2>
+            <p>I have been working on a multiple projects on AI & Machine Learning.</p>
+            <br>
+        </div>
+            <br>
+            <br>
+        <div class="box">
+            <h2><strong>Hardware-Software</strong></h2>
+            <p>As a hobby I been playing around with Raspberry PI, Computer Hardwares, iPad, iPhone among others.</p>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+
+        <div class="box">
+            <p>I program our teams robot. I also program minor things here and there.</p>
+        </div>
+    </div>
+
+</div> <!--Closing container div-->
+
+<script>
+         function passwd(){
+          var passwordGet = prompt('A password is required to open this link:');
+
+          if(passwordGet == "RobotProjectOpen"){
+            window.open("https://1drv.ms/u/s!AsL0aDIndfvEiMVtQyASdTrLHr1fJw?e=s2cDqx");
+          }
+          else{
+            alert("That is the wrong password.");
+          }
+        }
+</script>
+
+</body>
+</html>

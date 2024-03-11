@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mikul CS Showcase</title>
+    <link href="StyleSheet.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/Robot.jpg">
+</head>
+
+
+<body> <!--Main site content begins here-->
+<div id="site"> <!--Page container-->
+    <div id="movebar"> <!--Navigation bar-->
+        <p>
+            <nav>
+                <inline><a href="ShowcaseHome.htm">Home</a></inline>
+                <div class="dropdown">
+                    <button onclick="window.location.href = 'ShowcaseSubmit.htm';" class="active dropbtn">Submitted
+                        Projects
+                    </button>
+                    <div class="dropdown-text">
+                        <a href="ShowcaseSubmit.htm#Python">Python</a>
+                        <a href="ShowcaseSubmit.htm#Java">Java</a>
+                        <a href="ShowcaseSubmit.htm#HTML">HTML</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="window.location.href = 'ShowcasePractice.htm';" class="dropbtn">Practice Projects
+                    </button>
+                    <div class="dropdown-text">
+                        <a href="ShowcasePractice.htm#Python">Python</a>
+                        <a href="ShowcasePractice.htm#Java">Java</a>
+                        <a href="ShowcasePractice.htm#HTML">HTML</a>
+                    </div>
+                </div>
+                <a href="ShowcaseOther.htm">Other Projects</a>
+            </nav>
+        </p>
+    </div>
+
+    <div id="content"> <!--Main content-->
+        <h1>Submitted Projects</h1>
+        <hr> <!--Creates a horizontal rule-->
+        <u><h2 class="moveName" id="Python">Python</h2></u>
+        <div class="box">
+            <img src="Images/BrickBreakerImg.jpg" class="imgM" title="Brick Breaker" align="right" width="205px"
+                 height="125px">
+            <h3><strong>Brick Breaker</strong></h3>
+            <p>This is the first project that we did in Python. This one is a brick breaker game where you move a
+                paddle to bounce a ball and break bricks using PyGame. I went through multiple iteration of this
+                program.</p>
+            <a href="Programs/BrickBreaker.zip" title="Brick Breaker Download">Download it here</a>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+
+        <div class="box">
+            <img src="Images/TextAG.jpg" class="imgM" title="Text Adventure Game" align="right" width="205px"
+                 height="125px">
+            <h3><strong>Text Adventure Game</strong></h3>
+            <p>This is the second project that we did in Python. I created a text adventure game using Minecraft as part
+                of my storyline. I added visuals to the game, as well, using PyGame.</p>
+            <a href="Programs/TextAdventureGame.zip" title="Text Adventure Game Download">Download it here</a>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+
+        <div class="box">
+            <img src="Images/CatTrap.jpg" class="imgM" title="Cat Trap" align="right" width="125px"
+                 height="125px">
+            <h3><strong>Cat Trap (Incomplete)</strong></h3>
+            <p>This Python project was given to me by Dr. Reynolds as an extra project. I was unable to finish this
+                program, but I got blocking working.</p>
+            <a href="Programs/CatTrap.zip" title="Cat Trap Download">Download it here</a>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <u><h2 class="moveName" id="Java">Java</h2></u>
+        <div class="box">
+            <img src="Images/JavaS.jpg" class="imgM" title="Challenges" align="right" width="205px"
+                 height="125px">
+            <h3><strong>Challenges</strong></h3>
+            <p>This java program has 6 challenges that we did to practice java.</p>
+            <a href="Programs/JavaChallenges.zip" download="Java Challenges" title="Challenges Download">Download it
+                here</a>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <u><h2 class="moveName" id="HTML">HTML</h2></u>
+        <div class="box">
+            <a href="ShowcaseHome.htm"> <img src="Images/img.jpg" class="imgM" title="Showcase Website" align="right"
+                                             width="205px"
+                                             height="125px"> </a>
+            <h3><strong>Showcase Website</strong></h3>
+            <p>This website was created to learn HTML and showcase my work. It is the one you are on right now.</p>
+            <a href="ShowcaseSubmit.htm#HTML" onclick="passwd()" title="Showcase Website Download"> Download it here</a>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+
+    </div> <!--Closing container div-->
+    <script>
+         function passwd(){
+          var passwordGet = prompt('A password is required to download this site:');
+          if(passwordGet == "SiteCodeOpen"){
+            alert("Unfortunatly you can't download this site");
+            window.open("ShowcaseHome.htm");
+          }else{
+            alert("That is the wrong password.");
+          }
+        }
+    </script>
+
+</body>
+</html>
